@@ -1,0 +1,12 @@
+<korisnici>
+    <korisnik>
+        <korisnicko_ime>kor1</korisnicko_ime>
+        <lozinka>abc</lozinka>
+        <razina_prava>1</razina_prava>
+    </korisnik>
+    <korisnik>
+        <korisnicko_ime>kor2</korisnicko_ime>
+        <lozinka>def</lozinka>
+        <razina_prava>0</razina_prava>
+    </korisnik>
+</korisnici>

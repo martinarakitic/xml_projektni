@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="auti">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="auto" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="marka" type="xs:string"/>
+                            <xs:element name="model" type="xs:string"/>
+                            <xs:element name="tip" type="xs:decimal"/>
+                            <xs:element name="godina_proizvodnje" type="xs:integer"/>
+                            <xs:element maxOccurs="1" ref="motor"/>
+                            <xs:element name="mijenjac" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+     <xs:element name="motor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="snaga_motora" type="xs:integer"/>
+                <xs:element name="vrsta_motora" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
